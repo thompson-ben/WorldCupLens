@@ -1,84 +1,16 @@
 import Link from "next/link";
 import { getDataProvider } from "@/lib/provider";
-import { getWorldCupInsights } from "@/lib/wc-insights";
-import { computeMatchInsights } from "@/lib/match-insights";
-import { percent } from "@/lib/format";
+import { getHomeInsights } from "@/lib/intelligence";
 import { TournamentCard } from "@/components/TournamentCard";
-import { InsightCard } from "@/components/InsightCard";
-import { ShockRiskCard } from "@/components/cards/ShockRiskCard";
-import { TournamentWinnerCard } from "@/components/cards/TournamentWinnerCard";
-import { RouteToFinalCard } from "@/components/cards/RouteToFinalCard";
+import { IntelInsightCard } from "@/components/cards/IntelInsightCard";
 
 export const revalidate = 3600;
 
 export default async function HomePage() {
-  const [tournaments, wc] = await Promise.all([
+  const [tournaments, insights] = await Promise.all([
     getDataProvider().listTournaments(),
-    getWorldCupInsights(),
+    getHomeInsights(),
   ]);
-
-  // Featured "shock risk": the favourite against the strongest dark horse.
-  let shock: React.ReactNode = null;
-  let finalCard: React.ReactNode = null;
-  let darkHorseCard: React.ReactNode = null;
-  let routeCard: React.ReactNode = null;
-
-  if (wc) {
-    const fav = wc.winners[0]!.team;
-    const dh = wc.darkHorses[0]?.team ?? wc.winners[5]!.team;
-    const favTeam = fav.rating >= dh.rating ? fav : dh;
-    const dogTeam = fav.rating >= dh.rating ? dh : fav;
-    const m = computeMatchInsights(favTeam, dogTeam, { neutralVenue: true });
-    shock = (
-      <ShockRiskCard
-        favorite={favTeam}
-        underdog={dogTeam}
-        upsetPct={m.upsetRisk.pct}
-        level={m.upsetRisk.label}
-        summary={m.narrative}
-        shareText={m.shareText}
-      />
-    );
-
-    const f0 = wc.finalists[0]!;
-    const f1 = wc.finalists[1]!;
-    finalCard = (
-      <InsightCard
-        data={{
-          icon: "🏆",
-          kicker: "Most Likely Final",
-          title: `${f0.team.name} vs ${f1.team.name}`,
-          summary: `Our most frequent finalists — reaching the final in ${percent(f0.value, 0)} and ${percent(
-            f1.value,
-            0,
-          )} of simulations.`,
-          meta: `${wc.name}`,
-          shareText: `Projected ${wc.name} final: ${f0.team.name} vs ${f1.team.name} — simulated on WorldCupLens`,
-        }}
-      />
-    );
-
-    darkHorseCard = (
-      <TournamentWinnerCard
-        icon="🐎"
-        kicker="Dark Horse Watch"
-        title="Outsiders built for a deep run"
-        variant="green"
-        entries={wc.darkHorses}
-        shareText={`Dark horses to watch at the ${wc.name}: ${wc.darkHorses
-          .map((d) => d.team.name)
-          .join(", ")} — via WorldCupLens`}
-      />
-    );
-
-    routeCard = (
-      <RouteToFinalCard
-        team={wc.routeToFinal.team}
-        steps={wc.routeToFinal.steps}
-        shareText={`${wc.routeToFinal.team.name}'s route to the ${wc.name} final — via WorldCupLens`}
-      />
-    );
-  }
 
   return (
     <>
@@ -102,23 +34,48 @@ export default async function HomePage() {
       </section>
 
       <section>
-        <h2 className="section-title">Today&apos;s lens</h2>
-        <p className="section-sub">Fresh reads from the latest simulation batch.</p>
+        <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: "1rem" }}>
+          <div>
+            <h2 className="section-title" style={{ marginTop: "1.6rem" }}>
+              Today&apos;s lens
+            </h2>
+            <p className="section-sub">Fresh reads from the latest simulation batch — and why.</p>
+          </div>
+          <Link className="btn ghost sm" href="/daily-brief">
+            Daily Brief →
+          </Link>
+        </div>
         <div className="grid grid-3">
-          {shock}
-          {finalCard}
-          {darkHorseCard}
-          {routeCard}
-          <InsightCard
-            data={{
-              icon: "👟",
-              kicker: "Golden Boot Lens",
-              title: "Top-scorer projections",
-              summary:
-                "Projected Golden Boot race with per-player goal distributions — landing in an upcoming release.",
-              meta: "In development",
-            }}
-          />
+          {insights.map((insight) => (
+            <IntelInsightCard key={insight.id} insight={insight} />
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="section-title">Go deeper</h2>
+        <div className="grid grid-3">
+          <Link className="card" href="/route-comparison">
+            <span className="tag">Viral tool</span>
+            <h3>🧭 Route Comparison</h3>
+            <p className="muted" style={{ margin: 0, fontSize: "0.88rem" }}>
+              How much does the draw matter? Compare kind vs brutal knockout paths.
+            </p>
+          </Link>
+          <Link className="card" href="/golden-boot">
+            <span className="tag">Golden Boot</span>
+            <h3>👟 Top scorer race</h3>
+            <p className="muted" style={{ margin: 0, fontSize: "0.88rem" }}>
+              Projected goals and Golden Boot probability for the tournament&apos;s best.
+            </p>
+          </Link>
+          <Link className="card" href="/methodology">
+            <span className="tag">Transparency</span>
+            <h3>🧠 How it works</h3>
+            <p className="muted" style={{ margin: 0, fontSize: "0.88rem" }}>
+              Monte Carlo, Elo and expected goals — explained for football fans.
+            </p>
+          </Link>
         </div>
       </section>
 

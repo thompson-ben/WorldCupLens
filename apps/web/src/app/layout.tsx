@@ -37,8 +37,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               World<span>Cup</span>Lens
             </Link>
             <nav className="nav-links">
+              <Link href="/daily-brief">Daily Brief</Link>
               <Link href="/world-cup">World Cup 2026</Link>
-              <Link href="/tournaments">Tournaments</Link>
+              <Link href="/golden-boot">Golden Boot</Link>
+              <Link href="/route-comparison">Routes</Link>
+              <Link href="/methodology">Methodology</Link>
               <Link href="/simulator" className="primary">
                 Simulator
               </Link>
