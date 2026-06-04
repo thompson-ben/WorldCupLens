@@ -60,6 +60,15 @@ Next.js App Router, **mobile-first** CSS, and **SEO-friendly routing**:
   `/tournaments/[slug]/simulate`.
 - `generateStaticParams` + `generateMetadata` for pre-rendered, indexable pages.
 - `sitemap.xml` and `robots.txt` generated from the active data provider.
+- An interactive **"Re-run simulation"** control: the page renders a
+  server-computed projection, then re-runs on demand via `/api/simulate` with a
+  fresh seed — results vary slightly but stay consistent (same engine + iteration
+  count).
+
+The seeded World Cup uses the full **48-team / 12-group** structure (top 2 per
+group + 8 best third-placed teams → a 32-team knockout). The field is a
+placeholder of hosts + likely qualifiers; swap team ids in the seed to finalise
+it — no code changes needed.
 
 The app picks its data source automatically: **Supabase if configured**
 (`SUPABASE_URL` + `SUPABASE_ANON_KEY`), otherwise the static seed data.

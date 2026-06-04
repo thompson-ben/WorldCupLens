@@ -21,9 +21,15 @@ export interface TournamentSimulation {
  * Monte Carlo simulation. Fully generic — works for any seeded tournament
  * because the format strategy is built from the tournament's own config.
  */
+export interface SimulationParams {
+  iterations?: number;
+  /** Seed for reproducibility; vary it to re-run with fresh randomness. */
+  seed?: number;
+}
+
 export async function runTournamentSimulation(
   slug: string,
-  iterations = 10_000,
+  params: SimulationParams = {},
 ): Promise<TournamentSimulation | null> {
   const provider = getDataProvider();
   const tournament = await provider.getTournament(slug);
@@ -39,7 +45,7 @@ export async function runTournamentSimulation(
     format: createFormat(tournament.format),
     teamIds: tournament.teamIds,
     ratings: ratingMap,
-    options: { iterations, seed: 0xc0ffee },
+    options: { iterations: params.iterations ?? 10_000, seed: params.seed ?? 0xc0ffee },
   });
 
   const teamsById = new Map(teams.map((t) => [t.id, t]));

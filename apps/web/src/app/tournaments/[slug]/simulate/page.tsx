@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { runTournamentSimulation } from "@/lib/simulate";
-import { ProbabilityTable } from "@/components/ProbabilityTable";
+import { SimulationRunner } from "@/components/SimulationRunner";
 
 export const revalidate = 3600;
 
@@ -46,10 +46,14 @@ export default async function SimulatePage({ params }: Params) {
       <h1 className="page-title">{tournament.name} — Win probabilities</h1>
       <p className="muted">
         Based on {result.iterations.toLocaleString()} simulated tournaments using
-        Elo-derived team strengths.
+        Elo-derived team strengths. Re-run for a fresh set of draws.
       </p>
 
-      <ProbabilityTable result={result} teamsById={teamsById} />
+      <SimulationRunner
+        slug={tournament.slug}
+        teams={[...teamsById.values()]}
+        initialResult={result}
+      />
 
       <div className="actions">
         <Link className="btn secondary" href={`/tournaments/${tournament.slug}`}>

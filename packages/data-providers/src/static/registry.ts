@@ -53,6 +53,21 @@ const NATIONS: NationTuple[] = [
   ["tur", "Turkey", "TUR", "TR", 1700],
   ["ksa", "Saudi Arabia", "KSA", "SA", 1660],
   ["qat", "Qatar", "QAT", "QA", 1620],
+  // Additional likely qualifiers / placeholders for the 48-team World Cup.
+  // Swap ids freely as qualification is confirmed — nothing else depends on them.
+  ["nor", "Norway", "NOR", "NO", 1765],
+  ["ukr", "Ukraine", "UKR", "UA", 1735],
+  ["alg", "Algeria", "ALG", "DZ", 1705],
+  ["irn", "Iran", "IRN", "IR", 1700],
+  ["egy", "Egypt", "EGY", "EG", 1690],
+  ["civ", "Côte d'Ivoire", "CIV", "CI", 1680],
+  ["rsa", "South Africa", "RSA", "ZA", 1660],
+  ["ven", "Venezuela", "VEN", "VE", 1650],
+  ["cri", "Costa Rica", "CRC", "CR", 1640],
+  ["pan", "Panama", "PAN", "PA", 1630],
+  ["uzb", "Uzbekistan", "UZB", "UZ", 1620],
+  ["jor", "Jordan", "JOR", "JO", 1560],
+  ["nzl", "New Zealand", "NZL", "NZ", 1500],
 ];
 
 type ClubTuple = [id: string, name: string, code: string, countryCode: string, rating: number];

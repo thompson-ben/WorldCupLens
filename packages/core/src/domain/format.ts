@@ -29,6 +29,12 @@ export interface GroupKnockoutFormatConfig extends PointsConfig {
   groups: Group[];
   /** Teams advancing from each group into the knockout bracket. */
   advancePerGroup: number;
+  /**
+   * Extra qualifiers drawn from the best teams finishing one place below the
+   * automatic cut, ranked across all groups (e.g. the 8 best third-placed
+   * teams at the 48-team World Cup). Defaults to 0.
+   */
+  bestThirdsAdvance?: number;
   /** Legs played within the group stage. */
   groupLegs: 1 | 2;
   /** Legs played in each knockout tie. */

@@ -65,3 +65,37 @@ test("group-knockout produces exactly one champion per run", () => {
   // The strongest team should be the favourite.
   assert.equal(result.teams[0]!.teamId, "a");
 });
+
+test("best-placed thirds expand the knockout field (48-team World Cup shape)", () => {
+  // 12 groups of 4: top 2 (24) + 8 best thirds = a 32-team knockout.
+  const teamIds = Array.from({ length: 48 }, (_, i) => `t${i}`);
+  const groups = Array.from({ length: 12 }, (_, g) => ({
+    id: `G${g}`,
+    name: `Group ${g}`,
+    teamIds: teamIds.slice(g * 4, g * 4 + 4),
+  }));
+  const format = createFormat({
+    kind: "group-knockout",
+    groups,
+    advancePerGroup: 2,
+    bestThirdsAdvance: 8,
+    groupLegs: 1,
+    knockoutLegs: 1,
+    pointsForWin: 3,
+    pointsForDraw: 1,
+  });
+  const result = simulateTournament({
+    format,
+    teamIds,
+    ratings: ratings(Object.fromEntries(teamIds.map((id, i) => [id, 1400 + i * 10]))),
+    options: { iterations: 400, seed: 99 },
+  });
+
+  // Exactly one champion per run.
+  const totalChampion = result.teams.reduce((sum, t) => sum + t.champion, 0);
+  assert.ok(Math.abs(totalChampion - 1) < 1e-9);
+
+  // Some teams should reach the round of 32 — i.e. the bracket holds 32 teams.
+  const reachedR32 = result.teams.some((t) => "round-of-32" in t.reachedStage);
+  assert.ok(reachedR32, "expected a 32-team knockout bracket");
+});

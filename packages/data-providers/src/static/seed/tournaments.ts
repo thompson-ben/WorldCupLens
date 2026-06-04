@@ -10,16 +10,23 @@ function groupKnockoutTeamIds(groups: Group[]): string[] {
   return groups.flatMap((g) => g.teamIds);
 }
 
-// --- FIFA World Cup 2026 — group stage + knockout ---------------------------
+// --- FIFA World Cup 2026 — 12 groups of 4, group stage + knockout -----------
+// PLACEHOLDER FIELD: the 3 hosts plus likely qualifiers. Each group draws one
+// team from each notional pot. To finalise the field once qualification is
+// confirmed, just swap team ids below — no other code changes are required.
 const worldCupGroups: Group[] = [
-  { id: "A", name: "Group A", teamIds: ["arg", "jpn", "tun", "can"] },
-  { id: "B", name: "Group B", teamIds: ["fra", "sen", "mex", "ksa"] },
-  { id: "C", name: "Group C", teamIds: ["esp", "cro", "kor", "gha"] },
-  { id: "D", name: "Group D", teamIds: ["eng", "ned", "ecu", "nga"] },
-  { id: "E", name: "Group E", teamIds: ["bra", "sui", "srb", "aus"] },
-  { id: "F", name: "Group F", teamIds: ["por", "uru", "pol", "cmr"] },
-  { id: "G", name: "Group G", teamIds: ["bel", "den", "col", "par"] },
-  { id: "H", name: "Group H", teamIds: ["ita", "ger", "mar", "usa"] },
+  { id: "A", name: "Group A", teamIds: ["arg", "cro", "ecu", "civ"] },
+  { id: "B", name: "Group B", teamIds: ["fra", "uru", "aut", "rsa"] },
+  { id: "C", name: "Group C", teamIds: ["esp", "col", "pol", "alg"] },
+  { id: "D", name: "Group D", teamIds: ["eng", "mar", "wal", "uzb"] },
+  { id: "E", name: "Group E", teamIds: ["bra", "sui", "srb", "jor"] },
+  { id: "F", name: "Group F", teamIds: ["por", "den", "tun", "cri"] },
+  { id: "G", name: "Group G", teamIds: ["ned", "jpn", "cmr", "pan"] },
+  { id: "H", name: "Group H", teamIds: ["bel", "sen", "gha", "nzl"] },
+  { id: "I", name: "Group I", teamIds: ["ger", "kor", "nga", "par"] },
+  { id: "J", name: "Group J", teamIds: ["usa", "ita", "aus", "ksa"] },
+  { id: "K", name: "Group K", teamIds: ["mex", "ukr", "irn", "qat"] },
+  { id: "L", name: "Group L", teamIds: ["can", "nor", "egy", "ven"] },
 ];
 
 const worldCup2026: Tournament = {
@@ -33,7 +40,9 @@ const worldCup2026: Tournament = {
   format: {
     kind: "group-knockout",
     groups: worldCupGroups,
+    // Top 2 of each group (24) + 8 best third-placed teams = 32-team knockout.
     advancePerGroup: 2,
+    bestThirdsAdvance: 8,
     groupLegs: 1,
     knockoutLegs: 1,
     pointsForWin: 3,
