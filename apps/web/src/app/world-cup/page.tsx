@@ -12,6 +12,7 @@ import { InsightCard } from "@/components/InsightCard";
 import { ExplanationCard } from "@/components/cards/ExplanationCard";
 import { TournamentWinnerCard } from "@/components/cards/TournamentWinnerCard";
 import { RouteToFinalCard } from "@/components/cards/RouteToFinalCard";
+import { DataFreshness } from "@/components/DataFreshness";
 
 export const revalidate = 3600;
 
@@ -58,9 +59,10 @@ export default async function WorldCupDashboard() {
       <p className="eyebrow">{wc.competition} · {wc.season}</p>
       <h1 className="page-title">World Cup 2026 — Prediction Dashboard</h1>
       <p className="muted">
-        {wc.teamCount} teams · {wc.iterations.toLocaleString()} tournament simulations. Projections
-        update as ratings and results change.
+        {wc.teamCount} teams · {wc.iterations.toLocaleString()} tournament simulations on real Elo
+        ratings. Projections update as ratings and results change.
       </p>
+      <DataFreshness />
       <div className="actions">
         <Link className="btn" href="/simulator">
           ⚽ Open Match Simulator

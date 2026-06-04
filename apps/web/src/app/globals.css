@@ -828,6 +828,63 @@ footer.site-footer {
   font-weight: 700;
 }
 
+/* ---------- Data freshness + qualification ---------- */
+.freshness {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0.4rem 0 0;
+}
+.fresh-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: var(--green);
+  box-shadow: 0 0 8px var(--green);
+}
+.link {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.qbadge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.18rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  vertical-align: middle;
+}
+.qual-q {
+  color: var(--green);
+  background: rgba(52, 211, 153, 0.1);
+  border-color: rgba(52, 211, 153, 0.32);
+}
+.qual-h {
+  color: var(--gold);
+  background: rgba(251, 191, 36, 0.1);
+  border-color: rgba(251, 191, 36, 0.32);
+}
+.qual-p {
+  color: var(--blue);
+  background: rgba(56, 189, 248, 0.1);
+}
+.qual-e {
+  color: var(--red);
+  background: rgba(251, 113, 133, 0.1);
+}
+.qual-u {
+  color: var(--faint);
+  background: var(--surface-2);
+}
+
 .toast {
   position: fixed;
   left: 50%;

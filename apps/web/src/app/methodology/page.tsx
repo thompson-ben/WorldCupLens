@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { DataFreshness } from "@/components/DataFreshness";
 
 export const metadata: Metadata = {
   title: "Methodology — How WorldCupLens works",
@@ -79,14 +80,58 @@ export default function MethodologyPage() {
         </div>
       </div>
 
-      <h2 className="section-title">Where component ratings come from</h2>
+      <h2 className="section-title">Where our ratings come from</h2>
+      <div className="glass">
+        <p style={{ marginTop: 0 }}>
+          National-team strength is a <strong>World Football Elo rating computed from real
+          international results</strong> — every full international in the open{" "}
+          <a href="https://github.com/martj42/international_results" className="link">
+            martj42/international_results
+          </a>{" "}
+          dataset, processed with the standard Elo method:
+        </p>
+        <ul className="reason-list">
+          <li className="reason ok">
+            Match importance weighting (K): World Cup 60, continental finals 50, qualifiers &amp;
+            Nations League 40, friendlies 20.
+          </li>
+          <li className="reason ok">Goal-difference multiplier — bigger wins move ratings more.</li>
+          <li className="reason ok">Home advantage applied (≈100 Elo) except at neutral venues.</li>
+          <li className="reason ok">
+            Recent <strong>form</strong> and 12-month <strong>movement</strong> come from the same
+            results history.
+          </li>
+        </ul>
+        <p style={{ marginBottom: 0 }}>
+          <strong>Why Elo over the FIFA ranking?</strong> Elo updates after every match, accounts for
+          opponent strength, margin of victory and venue, and is fully reproducible from public data.
+          The FIFA ranking is a useful cross-check but is slower to react and harder to audit. A
+          blended model is on the roadmap.
+        </p>
+      </div>
+
+      <h2 className="section-title">Freshness &amp; refresh</h2>
+      <div className="grid grid-2">
+        <DataFreshness variant="card" />
+        <div className="glass">
+          <div className="ic-kicker">🔄 Refresh frequency</div>
+          <p className="ic-summary" style={{ marginTop: "0.4rem" }}>
+            Ratings refresh automatically on a schedule from the latest results, then redeploy. Real
+            World Cup 2026 fixtures (dates &amp; venues) and qualification status are pulled from the
+            same source. Club ratings (Premier League, Champions League) remain illustrative for now —
+            the international dataset doesn&apos;t cover clubs.
+          </p>
+        </div>
+      </div>
+
+      <h2 className="section-title">Per-skill breakdown</h2>
       <div className="glass">
         <p style={{ margin: 0 }}>
-          On team pages we break a rating into Attack, Defence, Form, Squad Depth and more. Today
-          those components are <strong>derived from each team&apos;s overall strength rating</strong>{" "}
-          as a transparent placeholder breakdown, so they&apos;re directionally useful but not yet
-          sourced from granular per-skill data. Replacing them with real underlying data is on the
-          roadmap, and the headline win probabilities already come from full simulation.
+          On team pages we also break a rating into Attack, Defence, Set-Piece Threat and more. Recent
+          <strong> form</strong> there is real; the other components are currently{" "}
+          <strong>derived from the overall rating</strong> as a transparent placeholder breakdown,
+          pending granular per-skill data. The headline win probabilities come from full simulation on
+          the real Elo ratings.
         </p>
       </div>
 

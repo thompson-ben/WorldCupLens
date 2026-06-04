@@ -10,3 +10,12 @@ export { StaticDataProvider } from "./static/provider.js";
 export { SupabaseDataProvider } from "./supabase/provider.js";
 export { SEED_TOURNAMENTS } from "./static/seed/tournaments.js";
 export { teamById, ratingById, type RegistryEntry } from "./static/registry.js";
+export {
+  RATINGS,
+  getRatingMeta,
+  type RatingsSnapshot,
+  type TeamRatingMeta,
+  type RecentResult,
+  type QualificationStatus,
+} from "./static/ratings-data.js";
+export { WC_FIXTURES, type WorldCupFixture, type FixturesSnapshot } from "./static/fixtures-data.js";

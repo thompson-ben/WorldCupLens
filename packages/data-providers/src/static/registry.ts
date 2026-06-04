@@ -1,4 +1,5 @@
 import type { Team, TeamRating } from "@worldcuplens/core";
+import { RATINGS } from "./ratings-data.js";
 
 /**
  * A shared pool of teams referenced by the seed tournaments. Teams are defined
@@ -117,6 +118,10 @@ export function teamById(id: string): Team {
 }
 
 export function ratingById(id: string): TeamRating {
+  // Prefer the real, data-derived Elo rating; fall back to the illustrative
+  // seed value (e.g. for clubs, which aren't in the international dataset).
+  const real = RATINGS.teams[id];
+  if (real) return { teamId: id, rating: real.rating };
   const entry = BY_ID.get(id);
   if (!entry) throw new Error(`Unknown team id in seed data: ${id}`);
   return { teamId: id, rating: entry.rating };
