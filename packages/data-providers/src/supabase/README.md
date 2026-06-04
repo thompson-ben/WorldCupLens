@@ -7,8 +7,10 @@ environment flag.
 ## Setup
 
 1. Create a Supabase project.
-2. Run [`schema.sql`](./schema.sql) in the SQL editor.
-3. Seed your tables (you can mirror `../static/seed`).
+2. In the SQL editor, run [`schema.sql`](./schema.sql) to create the tables.
+3. In the SQL editor, run [`seed.sql`](./seed.sql) to populate them with the
+   same data the app ships with (5 tournaments, their teams and ratings).
+   It's idempotent — safe to re-run.
 4. Provide the client at the app's server layer and inject it:
 
 ```ts
