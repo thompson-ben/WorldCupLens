@@ -5,12 +5,12 @@ import "./globals.css";
 
 const siteName = "WorldCupLens";
 const description =
-  "Simulations, odds and analytics for football tournaments — World Cup, Euros, Champions League, Premier League and more.";
+  "Run thousands of match simulations and explore win probabilities, likely scorelines, shock risks and routes to the final — for the World Cup, Euros, Champions League and more.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.SITE_URL ?? "http://localhost:3000"),
   title: {
-    default: `${siteName} — Tournament simulations & analytics`,
+    default: "WorldCupLens — Simulate the World Cup before it happens",
     template: `%s · ${siteName}`,
   },
   description,
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0b1120",
+  themeColor: "#06090f",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -32,19 +32,24 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <header className="site-header">
           <div className="container">
-            <Link href="/" className="brand">
+            <Link href="/" className="brand" aria-label="WorldCupLens home">
+              <span className="dot" aria-hidden />
               World<span>Cup</span>Lens
             </Link>
-            <Link href="/tournaments" className="muted">
-              Tournaments
-            </Link>
+            <nav className="nav-links">
+              <Link href="/world-cup">World Cup 2026</Link>
+              <Link href="/tournaments">Tournaments</Link>
+              <Link href="/simulator" className="primary">
+                Simulator
+              </Link>
+            </nav>
           </div>
         </header>
         <main className="container">{children}</main>
         <footer className="site-footer">
           <div className="container">
             Monte Carlo projections from a tournament-agnostic simulation engine.
-            Figures are illustrative.
+            Figures are model-based projections, not betting advice.
           </div>
         </footer>
       </body>

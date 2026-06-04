@@ -15,7 +15,9 @@ export default async function TournamentsPage() {
   return (
     <>
       <h1 className="page-title">Tournaments</h1>
-      <p className="muted">Pick a competition to explore its simulated odds.</p>
+      <p className="muted">
+        Choose a tournament to explore projections, likely outcomes and route-to-final scenarios.
+      </p>
       <div className="grid grid-3">
         {tournaments.map((t) => (
           <TournamentCard key={t.id} tournament={t} />
