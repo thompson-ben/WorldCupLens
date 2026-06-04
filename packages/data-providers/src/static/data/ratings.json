@@ -1,0 +1,3136 @@
+{
+  "generatedAt": "2026-06-04T14:42:44.250Z",
+  "ratingDate": "2026-06-03",
+  "source": "International match results (github.com/martj42/international_results)",
+  "method": "World Football Elo: K by competition (WC 60, continental finals 50, qualifiers/Nations League 40, friendlies 20), goal-difference and home-advantage adjusted.",
+  "teamCount": 53,
+  "teams": {
+    "arg": {
+      "name": "Argentina",
+      "rating": 2187,
+      "previousRating": 2213,
+      "movement": -26,
+      "formScore": 83,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-03-31",
+      "recent": [
+        {
+          "date": "2026-03-31",
+          "opponent": "Zambia",
+          "score": "5-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Mauritania",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-14",
+          "opponent": "Angola",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Puerto Rico",
+          "score": "6-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Venezuela",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Ecuador",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2025-09-04",
+          "opponent": "Venezuela",
+          "score": "3-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-06-10",
+          "opponent": "Colombia",
+          "score": "1-1",
+          "result": "D"
+        }
+      ]
+    },
+    "fra": {
+      "name": "France",
+      "rating": 2143,
+      "previousRating": 2095,
+      "movement": 47,
+      "formScore": 83,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-03-29",
+      "recent": [
+        {
+          "date": "2026-03-29",
+          "opponent": "Colombia",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "Brazil",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-16",
+          "opponent": "Azerbaijan",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-13",
+          "opponent": "Ukraine",
+          "score": "4-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-13",
+          "opponent": "Iceland",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Azerbaijan",
+          "score": "3-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Iceland",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-05",
+          "opponent": "Ukraine",
+          "score": "2-0",
+          "result": "W"
+        }
+      ]
+    },
+    "esp": {
+      "name": "Spain",
+      "rating": 2226,
+      "previousRating": 2214,
+      "movement": 12,
+      "formScore": 80,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-03-31",
+      "recent": [
+        {
+          "date": "2026-03-31",
+          "opponent": "Egypt",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Serbia",
+          "score": "3-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Turkey",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Georgia",
+          "score": "4-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Bulgaria",
+          "score": "4-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-11",
+          "opponent": "Georgia",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-07",
+          "opponent": "Turkey",
+          "score": "6-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-04",
+          "opponent": "Bulgaria",
+          "score": "3-0",
+          "result": "W"
+        }
+      ]
+    },
+    "eng": {
+      "name": "England",
+      "rating": 2084,
+      "previousRating": 2073,
+      "movement": 11,
+      "formScore": 73,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-03-31",
+      "recent": [
+        {
+          "date": "2026-03-31",
+          "opponent": "Japan",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Uruguay",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-11-16",
+          "opponent": "Albania",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-13",
+          "opponent": "Serbia",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Latvia",
+          "score": "5-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-09",
+          "opponent": "Wales",
+          "score": "3-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Serbia",
+          "score": "5-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-06",
+          "opponent": "Andorra",
+          "score": "2-0",
+          "result": "W"
+        }
+      ]
+    },
+    "bra": {
+      "name": "Brazil",
+      "rating": 2065,
+      "previousRating": 2068,
+      "movement": -3,
+      "formScore": 63,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-05-31",
+      "recent": [
+        {
+          "date": "2026-05-31",
+          "opponent": "Panama",
+          "score": "6-2",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Croatia",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "France",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Tunisia",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Senegal",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Japan",
+          "score": "2-3",
+          "result": "L"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "South Korea",
+          "score": "5-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Bolivia",
+          "score": "0-1",
+          "result": "L"
+        }
+      ]
+    },
+    "por": {
+      "name": "Portugal",
+      "rating": 2040,
+      "previousRating": 2047,
+      "movement": -6,
+      "formScore": 70,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-03-31",
+      "recent": [
+        {
+          "date": "2026-03-31",
+          "opponent": "United States",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-28",
+          "opponent": "Mexico",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2025-11-16",
+          "opponent": "Armenia",
+          "score": "9-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-13",
+          "opponent": "Republic of Ireland",
+          "score": "0-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Hungary",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2025-10-11",
+          "opponent": "Republic of Ireland",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Hungary",
+          "score": "3-2",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-06",
+          "opponent": "Armenia",
+          "score": "5-0",
+          "result": "W"
+        }
+      ]
+    },
+    "ned": {
+      "name": "Netherlands",
+      "rating": 2006,
+      "previousRating": 2026,
+      "movement": -21,
+      "formScore": 70,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-06-03",
+      "recent": [
+        {
+          "date": "2026-06-03",
+          "opponent": "Algeria",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Ecuador",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Norway",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-17",
+          "opponent": "Lithuania",
+          "score": "4-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-14",
+          "opponent": "Poland",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-10-12",
+          "opponent": "Finland",
+          "score": "4-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-09",
+          "opponent": "Malta",
+          "score": "4-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-07",
+          "opponent": "Lithuania",
+          "score": "3-2",
+          "result": "W"
+        }
+      ]
+    },
+    "bel": {
+      "name": "Belgium",
+      "rating": 1951,
+      "previousRating": 1903,
+      "movement": 48,
+      "formScore": 80,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-06-02",
+      "recent": [
+        {
+          "date": "2026-06-02",
+          "opponent": "Croatia",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Mexico",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-28",
+          "opponent": "United States",
+          "score": "5-2",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Liechtenstein",
+          "score": "7-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Kazakhstan",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-10-13",
+          "opponent": "Wales",
+          "score": "4-2",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "North Macedonia",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2025-09-07",
+          "opponent": "Kazakhstan",
+          "score": "6-0",
+          "result": "W"
+        }
+      ]
+    },
+    "ita": {
+      "name": "Italy",
+      "rating": 1919,
+      "previousRating": 1977,
+      "movement": -59,
+      "formScore": 83,
+      "qualification": "unknown",
+      "lastMatchDate": "2026-06-03",
+      "recent": [
+        {
+          "date": "2026-06-03",
+          "opponent": "Luxembourg",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Bosnia and Herzegovina",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "Northern Ireland",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-16",
+          "opponent": "Norway",
+          "score": "1-4",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-13",
+          "opponent": "Moldova",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Israel",
+          "score": "3-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-11",
+          "opponent": "Estonia",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-08",
+          "opponent": "Israel",
+          "score": "5-4",
+          "result": "W"
+        }
+      ]
+    },
+    "ger": {
+      "name": "Germany",
+      "rating": 1996,
+      "previousRating": 2048,
+      "movement": -51,
+      "formScore": 80,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-05-31",
+      "recent": [
+        {
+          "date": "2026-05-31",
+          "opponent": "Finland",
+          "score": "4-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-30",
+          "opponent": "Ghana",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Switzerland",
+          "score": "4-3",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-17",
+          "opponent": "Slovakia",
+          "score": "6-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-14",
+          "opponent": "Luxembourg",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-13",
+          "opponent": "Northern Ireland",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Luxembourg",
+          "score": "4-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-07",
+          "opponent": "Northern Ireland",
+          "score": "3-1",
+          "result": "W"
+        }
+      ]
+    },
+    "cro": {
+      "name": "Croatia",
+      "rating": 1967,
+      "previousRating": 1967,
+      "movement": 0,
+      "formScore": 73,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-06-02",
+      "recent": [
+        {
+          "date": "2026-06-02",
+          "opponent": "Belgium",
+          "score": "0-2",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Brazil",
+          "score": "1-3",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "Colombia",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-17",
+          "opponent": "Montenegro",
+          "score": "3-2",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-14",
+          "opponent": "Faroe Islands",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-12",
+          "opponent": "Gibraltar",
+          "score": "3-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-09",
+          "opponent": "Czech Republic",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2025-09-08",
+          "opponent": "Montenegro",
+          "score": "4-0",
+          "result": "W"
+        }
+      ]
+    },
+    "uru": {
+      "name": "Uruguay",
+      "rating": 1976,
+      "previousRating": 2000,
+      "movement": -25,
+      "formScore": 53,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-03-31",
+      "recent": [
+        {
+          "date": "2026-03-31",
+          "opponent": "Algeria",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "England",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "United States",
+          "score": "1-5",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Mexico",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2025-10-13",
+          "opponent": "Uzbekistan",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Dominican Republic",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Chile",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2025-09-04",
+          "opponent": "Peru",
+          "score": "3-0",
+          "result": "W"
+        }
+      ]
+    },
+    "col": {
+      "name": "Colombia",
+      "rating": 2059,
+      "previousRating": 2028,
+      "movement": 31,
+      "formScore": 67,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-06-01",
+      "recent": [
+        {
+          "date": "2026-06-01",
+          "opponent": "Costa Rica",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-29",
+          "opponent": "France",
+          "score": "1-3",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "Croatia",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Australia",
+          "score": "3-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "New Zealand",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Canada",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2025-10-11",
+          "opponent": "Mexico",
+          "score": "4-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Venezuela",
+          "score": "6-3",
+          "result": "W"
+        }
+      ]
+    },
+    "mar": {
+      "name": "Morocco",
+      "rating": 1985,
+      "previousRating": 1903,
+      "movement": 82,
+      "formScore": 80,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-06-02",
+      "recent": [
+        {
+          "date": "2026-06-02",
+          "opponent": "Madagascar",
+          "score": "4-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-05-26",
+          "opponent": "Burundi",
+          "score": "5-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Paraguay",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Ecuador",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2026-01-18",
+          "opponent": "Senegal",
+          "score": "3-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-01-14",
+          "opponent": "Nigeria",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2026-01-09",
+          "opponent": "Cameroon",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-01-04",
+          "opponent": "Tanzania",
+          "score": "1-0",
+          "result": "W"
+        }
+      ]
+    },
+    "usa": {
+      "name": "United States",
+      "rating": 1835,
+      "previousRating": 1828,
+      "movement": 7,
+      "formScore": 53,
+      "qualification": "host",
+      "lastMatchDate": "2026-05-31",
+      "recent": [
+        {
+          "date": "2026-05-31",
+          "opponent": "Senegal",
+          "score": "3-2",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Portugal",
+          "score": "0-2",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-28",
+          "opponent": "Belgium",
+          "score": "2-5",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Uruguay",
+          "score": "5-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Paraguay",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Australia",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Ecuador",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Japan",
+          "score": "2-0",
+          "result": "W"
+        }
+      ]
+    },
+    "mex": {
+      "name": "Mexico",
+      "rating": 1974,
+      "previousRating": 1928,
+      "movement": 46,
+      "formScore": 63,
+      "qualification": "host",
+      "lastMatchDate": "2026-05-30",
+      "recent": [
+        {
+          "date": "2026-05-30",
+          "opponent": "Australia",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-05-22",
+          "opponent": "Ghana",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Belgium",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-28",
+          "opponent": "Portugal",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2026-02-25",
+          "opponent": "Iceland",
+          "score": "4-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-01-25",
+          "opponent": "Bolivia",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-01-22",
+          "opponent": "Panama",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Paraguay",
+          "score": "1-2",
+          "result": "L"
+        }
+      ]
+    },
+    "sui": {
+      "name": "Switzerland",
+      "rating": 1958,
+      "previousRating": 1873,
+      "movement": 85,
+      "formScore": 70,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-05-31",
+      "recent": [
+        {
+          "date": "2026-05-31",
+          "opponent": "Jordan",
+          "score": "4-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Norway",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Germany",
+          "score": "3-4",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Kosovo",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Sweden",
+          "score": "4-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-13",
+          "opponent": "Slovenia",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Sweden",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-08",
+          "opponent": "Slovenia",
+          "score": "3-0",
+          "result": "W"
+        }
+      ]
+    },
+    "den": {
+      "name": "Denmark",
+      "rating": 1923,
+      "previousRating": 1921,
+      "movement": 2,
+      "formScore": 63,
+      "qualification": "unknown",
+      "lastMatchDate": "2026-06-03",
+      "recent": [
+        {
+          "date": "2026-06-03",
+          "opponent": "DR Congo",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Czech Republic",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "North Macedonia",
+          "score": "4-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Scotland",
+          "score": "2-4",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Belarus",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2025-10-12",
+          "opponent": "Greece",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-09",
+          "opponent": "Belarus",
+          "score": "6-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-08",
+          "opponent": "Greece",
+          "score": "3-0",
+          "result": "W"
+        }
+      ]
+    },
+    "jpn": {
+      "name": "Japan",
+      "rating": 1994,
+      "previousRating": 1980,
+      "movement": 13,
+      "formScore": 77,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-05-31",
+      "recent": [
+        {
+          "date": "2026-05-31",
+          "opponent": "Iceland",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "England",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-28",
+          "opponent": "Scotland",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Bolivia",
+          "score": "3-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-14",
+          "opponent": "Ghana",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Brazil",
+          "score": "3-2",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Paraguay",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "United States",
+          "score": "0-2",
+          "result": "L"
+        }
+      ]
+    },
+    "sen": {
+      "name": "Senegal",
+      "rating": 1919,
+      "previousRating": 1874,
+      "movement": 46,
+      "formScore": 73,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-05-31",
+      "recent": [
+        {
+          "date": "2026-05-31",
+          "opponent": "United States",
+          "score": "2-3",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Gambia",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-28",
+          "opponent": "Peru",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-01-18",
+          "opponent": "Morocco",
+          "score": "0-3",
+          "result": "L"
+        },
+        {
+          "date": "2026-01-14",
+          "opponent": "Egypt",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-01-09",
+          "opponent": "Mali",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-01-03",
+          "opponent": "Sudan",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-12-30",
+          "opponent": "Benin",
+          "score": "3-0",
+          "result": "W"
+        }
+      ]
+    },
+    "per": {
+      "name": "Peru",
+      "rating": 1766,
+      "previousRating": 1803,
+      "movement": -38,
+      "formScore": 13,
+      "qualification": "unknown",
+      "lastMatchDate": "2026-03-31",
+      "recent": [
+        {
+          "date": "2026-03-31",
+          "opponent": "Honduras",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-28",
+          "opponent": "Senegal",
+          "score": "0-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Chile",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-12",
+          "opponent": "Russia",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Chile",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Paraguay",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2025-09-04",
+          "opponent": "Uruguay",
+          "score": "0-3",
+          "result": "L"
+        },
+        {
+          "date": "2025-06-10",
+          "opponent": "Ecuador",
+          "score": "0-0",
+          "result": "D"
+        }
+      ]
+    },
+    "kor": {
+      "name": "South Korea",
+      "rating": 1881,
+      "previousRating": 1860,
+      "movement": 21,
+      "formScore": 63,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-06-03",
+      "recent": [
+        {
+          "date": "2026-06-03",
+          "opponent": "El Salvador",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-05-30",
+          "opponent": "Trinidad and Tobago",
+          "score": "5-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Austria",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-28",
+          "opponent": "Ivory Coast",
+          "score": "0-4",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Ghana",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-14",
+          "opponent": "Bolivia",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Paraguay",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Brazil",
+          "score": "0-5",
+          "result": "L"
+        }
+      ]
+    },
+    "ecu": {
+      "name": "Ecuador",
+      "rating": 2025,
+      "previousRating": 1995,
+      "movement": 30,
+      "formScore": 53,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-05-30",
+      "recent": [
+        {
+          "date": "2026-05-30",
+          "opponent": "Saudi Arabia",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Netherlands",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Morocco",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "New Zealand",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-13",
+          "opponent": "Canada",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Mexico",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "United States",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Argentina",
+          "score": "1-0",
+          "result": "W"
+        }
+      ]
+    },
+    "pol": {
+      "name": "Poland",
+      "rating": 1771,
+      "previousRating": 1761,
+      "movement": 10,
+      "formScore": 60,
+      "qualification": "unknown",
+      "lastMatchDate": "2026-06-03",
+      "recent": [
+        {
+          "date": "2026-06-03",
+          "opponent": "Nigeria",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2026-05-31",
+          "opponent": "Ukraine",
+          "score": "0-2",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Sweden",
+          "score": "2-3",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "Albania",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-17",
+          "opponent": "Malta",
+          "score": "3-2",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-14",
+          "opponent": "Netherlands",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-10-12",
+          "opponent": "Lithuania",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-09",
+          "opponent": "New Zealand",
+          "score": "1-0",
+          "result": "W"
+        }
+      ]
+    },
+    "aut": {
+      "name": "Austria",
+      "rating": 1890,
+      "previousRating": 1892,
+      "movement": -2,
+      "formScore": 83,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-06-01",
+      "recent": [
+        {
+          "date": "2026-06-01",
+          "opponent": "Tunisia",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "South Korea",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Ghana",
+          "score": "5-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Bosnia and Herzegovina",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Cyprus",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-12",
+          "opponent": "Romania",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2025-10-09",
+          "opponent": "San Marino",
+          "score": "10-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Bosnia and Herzegovina",
+          "score": "2-1",
+          "result": "W"
+        }
+      ]
+    },
+    "wal": {
+      "name": "Wales",
+      "rating": 1752,
+      "previousRating": 1794,
+      "movement": -42,
+      "formScore": 40,
+      "qualification": "unknown",
+      "lastMatchDate": "2026-06-02",
+      "recent": [
+        {
+          "date": "2026-06-02",
+          "opponent": "Ghana",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Northern Ireland",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "Bosnia and Herzegovina",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "North Macedonia",
+          "score": "7-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Liechtenstein",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-13",
+          "opponent": "Belgium",
+          "score": "2-4",
+          "result": "L"
+        },
+        {
+          "date": "2025-10-09",
+          "opponent": "England",
+          "score": "0-3",
+          "result": "L"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Canada",
+          "score": "0-1",
+          "result": "L"
+        }
+      ]
+    },
+    "chi": {
+      "name": "Chile",
+      "rating": 1798,
+      "previousRating": 1802,
+      "movement": -5,
+      "formScore": 47,
+      "qualification": "unknown",
+      "lastMatchDate": "2026-03-30",
+      "recent": [
+        {
+          "date": "2026-03-30",
+          "opponent": "New Zealand",
+          "score": "1-4",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Cape Verde",
+          "score": "4-2",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Peru",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Russia",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Peru",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Uruguay",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2025-09-04",
+          "opponent": "Brazil",
+          "score": "0-3",
+          "result": "L"
+        },
+        {
+          "date": "2025-06-10",
+          "opponent": "Bolivia",
+          "score": "0-2",
+          "result": "L"
+        }
+      ]
+    },
+    "srb": {
+      "name": "Serbia",
+      "rating": 1809,
+      "previousRating": 1908,
+      "movement": -99,
+      "formScore": 50,
+      "qualification": "unknown",
+      "lastMatchDate": "2026-05-31",
+      "recent": [
+        {
+          "date": "2026-05-31",
+          "opponent": "Cape Verde",
+          "score": "0-3",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Saudi Arabia",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Spain",
+          "score": "0-3",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-16",
+          "opponent": "Latvia",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-13",
+          "opponent": "England",
+          "score": "0-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Andorra",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-11",
+          "opponent": "Albania",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "England",
+          "score": "0-5",
+          "result": "L"
+        }
+      ]
+    },
+    "tun": {
+      "name": "Tunisia",
+      "rating": 1744,
+      "previousRating": 1737,
+      "movement": 7,
+      "formScore": 43,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-06-01",
+      "recent": [
+        {
+          "date": "2026-06-01",
+          "opponent": "Austria",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Canada",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-28",
+          "opponent": "Haiti",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-01-03",
+          "opponent": "Mali",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-12-30",
+          "opponent": "Tanzania",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-12-27",
+          "opponent": "Nigeria",
+          "score": "2-3",
+          "result": "L"
+        },
+        {
+          "date": "2025-12-23",
+          "opponent": "Uganda",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-12-07",
+          "opponent": "Qatar",
+          "score": "3-0",
+          "result": "W"
+        }
+      ]
+    },
+    "cmr": {
+      "name": "Cameroon",
+      "rating": 1724,
+      "previousRating": 1696,
+      "movement": 28,
+      "formScore": 57,
+      "qualification": "unknown",
+      "lastMatchDate": "2026-03-31",
+      "recent": [
+        {
+          "date": "2026-03-31",
+          "opponent": "China PR",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Australia",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2026-01-09",
+          "opponent": "Morocco",
+          "score": "0-2",
+          "result": "L"
+        },
+        {
+          "date": "2026-01-04",
+          "opponent": "South Africa",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-12-31",
+          "opponent": "Mozambique",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-12-28",
+          "opponent": "Ivory Coast",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-12-24",
+          "opponent": "Gabon",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-13",
+          "opponent": "DR Congo",
+          "score": "0-1",
+          "result": "L"
+        }
+      ]
+    },
+    "gha": {
+      "name": "Ghana",
+      "rating": 1625,
+      "previousRating": 1598,
+      "movement": 27,
+      "formScore": 37,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-06-02",
+      "recent": [
+        {
+          "date": "2026-06-02",
+          "opponent": "Wales",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2026-05-22",
+          "opponent": "Mexico",
+          "score": "0-2",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-30",
+          "opponent": "Germany",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Austria",
+          "score": "1-5",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "South Korea",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-14",
+          "opponent": "Japan",
+          "score": "0-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-10-12",
+          "opponent": "Comoros",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-08",
+          "opponent": "Central African Republic",
+          "score": "5-0",
+          "result": "W"
+        }
+      ]
+    },
+    "nga": {
+      "name": "Nigeria",
+      "rating": 1886,
+      "previousRating": 1684,
+      "movement": 202,
+      "formScore": 73,
+      "qualification": "unknown",
+      "lastMatchDate": "2026-06-03",
+      "recent": [
+        {
+          "date": "2026-06-03",
+          "opponent": "Poland",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2026-05-30",
+          "opponent": "Jamaica",
+          "score": "3-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-05-26",
+          "opponent": "Zimbabwe",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Jordan",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Iran",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-01-17",
+          "opponent": "Egypt",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2026-01-14",
+          "opponent": "Morocco",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2026-01-10",
+          "opponent": "Algeria",
+          "score": "2-0",
+          "result": "W"
+        }
+      ]
+    },
+    "aus": {
+      "name": "Australia",
+      "rating": 1900,
+      "previousRating": 1850,
+      "movement": 51,
+      "formScore": 60,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-05-30",
+      "recent": [
+        {
+          "date": "2026-05-30",
+          "opponent": "Mexico",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Curaçao",
+          "score": "5-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Cameroon",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Colombia",
+          "score": "0-3",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-14",
+          "opponent": "Venezuela",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "United States",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Canada",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "New Zealand",
+          "score": "3-1",
+          "result": "W"
+        }
+      ]
+    },
+    "cze": {
+      "name": "Czech Republic",
+      "rating": 1790,
+      "previousRating": 1811,
+      "movement": -21,
+      "formScore": 53,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-05-31",
+      "recent": [
+        {
+          "date": "2026-05-31",
+          "opponent": "Kosovo",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Denmark",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "Republic of Ireland",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2025-11-17",
+          "opponent": "Gibraltar",
+          "score": "6-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-13",
+          "opponent": "San Marino",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-12",
+          "opponent": "Faroe Islands",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-10-09",
+          "opponent": "Croatia",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2025-09-08",
+          "opponent": "Saudi Arabia",
+          "score": "1-1",
+          "result": "D"
+        }
+      ]
+    },
+    "sco": {
+      "name": "Scotland",
+      "rating": 1830,
+      "previousRating": 1797,
+      "movement": 33,
+      "formScore": 63,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-05-30",
+      "recent": [
+        {
+          "date": "2026-05-30",
+          "opponent": "Curaçao",
+          "score": "4-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Ivory Coast",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-28",
+          "opponent": "Japan",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Denmark",
+          "score": "4-2",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Greece",
+          "score": "2-3",
+          "result": "L"
+        },
+        {
+          "date": "2025-10-12",
+          "opponent": "Belarus",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-09",
+          "opponent": "Greece",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-08",
+          "opponent": "Belarus",
+          "score": "2-0",
+          "result": "W"
+        }
+      ]
+    },
+    "par": {
+      "name": "Paraguay",
+      "rating": 1917,
+      "previousRating": 1876,
+      "movement": 41,
+      "formScore": 47,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-03-31",
+      "recent": [
+        {
+          "date": "2026-03-31",
+          "opponent": "Morocco",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Greece",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Mexico",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "United States",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "South Korea",
+          "score": "0-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Japan",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Peru",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-04",
+          "opponent": "Ecuador",
+          "score": "0-0",
+          "result": "D"
+        }
+      ]
+    },
+    "can": {
+      "name": "Canada",
+      "rating": 1905,
+      "previousRating": 1885,
+      "movement": 20,
+      "formScore": 57,
+      "qualification": "host",
+      "lastMatchDate": "2026-06-01",
+      "recent": [
+        {
+          "date": "2026-06-01",
+          "opponent": "Uzbekistan",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Tunisia",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-28",
+          "opponent": "Iceland",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Venezuela",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-13",
+          "opponent": "Ecuador",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Colombia",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Australia",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Wales",
+          "score": "1-0",
+          "result": "W"
+        }
+      ]
+    },
+    "tur": {
+      "name": "Turkey",
+      "rating": 1963,
+      "previousRating": 1892,
+      "movement": 71,
+      "formScore": 73,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-06-01",
+      "recent": [
+        {
+          "date": "2026-06-01",
+          "opponent": "North Macedonia",
+          "score": "4-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Kosovo",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "Romania",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Spain",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Bulgaria",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Georgia",
+          "score": "4-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-11",
+          "opponent": "Bulgaria",
+          "score": "6-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-07",
+          "opponent": "Spain",
+          "score": "0-6",
+          "result": "L"
+        }
+      ]
+    },
+    "ksa": {
+      "name": "Saudi Arabia",
+      "rating": 1683,
+      "previousRating": 1695,
+      "movement": -13,
+      "formScore": 40,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-05-30",
+      "recent": [
+        {
+          "date": "2026-05-30",
+          "opponent": "Ecuador",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Serbia",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Egypt",
+          "score": "0-4",
+          "result": "L"
+        },
+        {
+          "date": "2025-12-15",
+          "opponent": "Jordan",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2025-12-11",
+          "opponent": "Palestine",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-12-08",
+          "opponent": "Morocco",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2025-12-05",
+          "opponent": "Comoros",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-12-02",
+          "opponent": "Oman",
+          "score": "2-1",
+          "result": "W"
+        }
+      ]
+    },
+    "qat": {
+      "name": "Qatar",
+      "rating": 1568,
+      "previousRating": 1631,
+      "movement": -62,
+      "formScore": 23,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-05-28",
+      "recent": [
+        {
+          "date": "2026-05-28",
+          "opponent": "Republic of Ireland",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2025-12-07",
+          "opponent": "Tunisia",
+          "score": "0-3",
+          "result": "L"
+        },
+        {
+          "date": "2025-12-04",
+          "opponent": "Syria",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-12-01",
+          "opponent": "Palestine",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-17",
+          "opponent": "Zimbabwe",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "United Arab Emirates",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-08",
+          "opponent": "Oman",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2025-09-07",
+          "opponent": "Russia",
+          "score": "1-4",
+          "result": "L"
+        }
+      ]
+    },
+    "nor": {
+      "name": "Norway",
+      "rating": 1971,
+      "previousRating": 1879,
+      "movement": 93,
+      "formScore": 77,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-06-01",
+      "recent": [
+        {
+          "date": "2026-06-01",
+          "opponent": "Sweden",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Switzerland",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Netherlands",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-16",
+          "opponent": "Italy",
+          "score": "4-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-13",
+          "opponent": "Estonia",
+          "score": "4-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "New Zealand",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-10-11",
+          "opponent": "Israel",
+          "score": "5-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Moldova",
+          "score": "11-1",
+          "result": "W"
+        }
+      ]
+    },
+    "ukr": {
+      "name": "Ukraine",
+      "rating": 1847,
+      "previousRating": 1864,
+      "movement": -17,
+      "formScore": 63,
+      "qualification": "unknown",
+      "lastMatchDate": "2026-05-31",
+      "recent": [
+        {
+          "date": "2026-05-31",
+          "opponent": "Poland",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Albania",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "Sweden",
+          "score": "1-3",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-16",
+          "opponent": "Iceland",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-13",
+          "opponent": "France",
+          "score": "0-4",
+          "result": "L"
+        },
+        {
+          "date": "2025-10-13",
+          "opponent": "Azerbaijan",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Iceland",
+          "score": "5-3",
+          "result": "W"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Azerbaijan",
+          "score": "1-1",
+          "result": "D"
+        }
+      ]
+    },
+    "alg": {
+      "name": "Algeria",
+      "rating": 1873,
+      "previousRating": 1816,
+      "movement": 57,
+      "formScore": 77,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-06-03",
+      "recent": [
+        {
+          "date": "2026-06-03",
+          "opponent": "Netherlands",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Uruguay",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Guatemala",
+          "score": "7-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-01-10",
+          "opponent": "Nigeria",
+          "score": "0-2",
+          "result": "L"
+        },
+        {
+          "date": "2026-01-06",
+          "opponent": "DR Congo",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-12-31",
+          "opponent": "Equatorial Guinea",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-12-28",
+          "opponent": "Burkina Faso",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-12-24",
+          "opponent": "Sudan",
+          "score": "3-0",
+          "result": "W"
+        }
+      ]
+    },
+    "irn": {
+      "name": "Iran",
+      "rating": 1889,
+      "previousRating": 1925,
+      "movement": -36,
+      "formScore": 50,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-05-29",
+      "recent": [
+        {
+          "date": "2026-05-29",
+          "opponent": "Gambia",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Costa Rica",
+          "score": "5-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Nigeria",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Uzbekistan",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2025-11-13",
+          "opponent": "Cape Verde",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Tanzania",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Russia",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-06-10",
+          "opponent": "North Korea",
+          "score": "3-0",
+          "result": "W"
+        }
+      ]
+    },
+    "egy": {
+      "name": "Egypt",
+      "rating": 1814,
+      "previousRating": 1778,
+      "movement": 36,
+      "formScore": 70,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-05-28",
+      "recent": [
+        {
+          "date": "2026-05-28",
+          "opponent": "Russia",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Spain",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Saudi Arabia",
+          "score": "4-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-01-17",
+          "opponent": "Nigeria",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2026-01-14",
+          "opponent": "Senegal",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2026-01-10",
+          "opponent": "Ivory Coast",
+          "score": "3-2",
+          "result": "W"
+        },
+        {
+          "date": "2026-01-05",
+          "opponent": "Benin",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-12-29",
+          "opponent": "Angola",
+          "score": "0-0",
+          "result": "D"
+        }
+      ]
+    },
+    "civ": {
+      "name": "Ivory Coast",
+      "rating": 1796,
+      "previousRating": 1709,
+      "movement": 88,
+      "formScore": 73,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-03-31",
+      "recent": [
+        {
+          "date": "2026-03-31",
+          "opponent": "Scotland",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-28",
+          "opponent": "South Korea",
+          "score": "4-0",
+          "result": "W"
+        },
+        {
+          "date": "2026-01-10",
+          "opponent": "Egypt",
+          "score": "2-3",
+          "result": "L"
+        },
+        {
+          "date": "2026-01-06",
+          "opponent": "Burkina Faso",
+          "score": "3-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-12-31",
+          "opponent": "Gabon",
+          "score": "3-2",
+          "result": "W"
+        },
+        {
+          "date": "2025-12-28",
+          "opponent": "Cameroon",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-12-24",
+          "opponent": "Mozambique",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Oman",
+          "score": "2-0",
+          "result": "W"
+        }
+      ]
+    },
+    "rsa": {
+      "name": "South Africa",
+      "rating": 1653,
+      "previousRating": 1675,
+      "movement": -23,
+      "formScore": 50,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-05-29",
+      "recent": [
+        {
+          "date": "2026-05-29",
+          "opponent": "Nicaragua",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Panama",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Panama",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2026-01-04",
+          "opponent": "Cameroon",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-12-29",
+          "opponent": "Zimbabwe",
+          "score": "3-2",
+          "result": "W"
+        },
+        {
+          "date": "2025-12-26",
+          "opponent": "Egypt",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2025-12-22",
+          "opponent": "Angola",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Zambia",
+          "score": "3-1",
+          "result": "W"
+        }
+      ]
+    },
+    "ven": {
+      "name": "Venezuela",
+      "rating": 1818,
+      "previousRating": 1829,
+      "movement": -12,
+      "formScore": 43,
+      "qualification": "unknown",
+      "lastMatchDate": "2026-03-30",
+      "recent": [
+        {
+          "date": "2026-03-30",
+          "opponent": "Uzbekistan",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Trinidad and Tobago",
+          "score": "4-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Canada",
+          "score": "0-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-14",
+          "opponent": "Australia",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Argentina",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Colombia",
+          "score": "3-6",
+          "result": "L"
+        },
+        {
+          "date": "2025-09-04",
+          "opponent": "Argentina",
+          "score": "0-3",
+          "result": "L"
+        },
+        {
+          "date": "2025-06-10",
+          "opponent": "Uruguay",
+          "score": "0-2",
+          "result": "L"
+        }
+      ]
+    },
+    "cri": {
+      "name": "Costa Rica",
+      "rating": 1749,
+      "previousRating": 1775,
+      "movement": -26,
+      "formScore": 30,
+      "qualification": "unknown",
+      "lastMatchDate": "2026-06-01",
+      "recent": [
+        {
+          "date": "2026-06-01",
+          "opponent": "Colombia",
+          "score": "1-3",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Iran",
+          "score": "0-5",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Jordan",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Honduras",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2025-11-13",
+          "opponent": "Haiti",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2025-10-13",
+          "opponent": "Nicaragua",
+          "score": "4-1",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-09",
+          "opponent": "Honduras",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Haiti",
+          "score": "3-3",
+          "result": "D"
+        }
+      ]
+    },
+    "pan": {
+      "name": "Panama",
+      "rating": 1860,
+      "previousRating": 1836,
+      "movement": 23,
+      "formScore": 60,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-06-03",
+      "recent": [
+        {
+          "date": "2026-06-03",
+          "opponent": "Dominican Republic",
+          "score": "4-2",
+          "result": "W"
+        },
+        {
+          "date": "2026-05-31",
+          "opponent": "Brazil",
+          "score": "2-6",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "South Africa",
+          "score": "2-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "South Africa",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2026-01-22",
+          "opponent": "Mexico",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2026-01-18",
+          "opponent": "Bolivia",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "El Salvador",
+          "score": "3-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-11-13",
+          "opponent": "Guatemala",
+          "score": "3-2",
+          "result": "W"
+        }
+      ]
+    },
+    "uzb": {
+      "name": "Uzbekistan",
+      "rating": 1826,
+      "previousRating": 1814,
+      "movement": 12,
+      "formScore": 53,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-06-01",
+      "recent": [
+        {
+          "date": "2026-06-01",
+          "opponent": "Canada",
+          "score": "0-2",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-30",
+          "opponent": "Venezuela",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Gabon",
+          "score": "3-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-01-26",
+          "opponent": "China PR",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Iran",
+          "score": "0-0",
+          "result": "D"
+        },
+        {
+          "date": "2025-11-14",
+          "opponent": "Egypt",
+          "score": "2-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-10-13",
+          "opponent": "Uruguay",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Kuwait",
+          "score": "2-0",
+          "result": "W"
+        }
+      ]
+    },
+    "jor": {
+      "name": "Jordan",
+      "rating": 1781,
+      "previousRating": 1745,
+      "movement": 35,
+      "formScore": 57,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-05-31",
+      "recent": [
+        {
+          "date": "2026-05-31",
+          "opponent": "Switzerland",
+          "score": "1-4",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Nigeria",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Costa Rica",
+          "score": "2-2",
+          "result": "D"
+        },
+        {
+          "date": "2025-12-18",
+          "opponent": "Morocco",
+          "score": "2-3",
+          "result": "L"
+        },
+        {
+          "date": "2025-12-15",
+          "opponent": "Saudi Arabia",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-12-12",
+          "opponent": "Iraq",
+          "score": "1-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-12-09",
+          "opponent": "Egypt",
+          "score": "3-0",
+          "result": "W"
+        },
+        {
+          "date": "2025-12-06",
+          "opponent": "Kuwait",
+          "score": "3-1",
+          "result": "W"
+        }
+      ]
+    },
+    "nzl": {
+      "name": "New Zealand",
+      "rating": 1734,
+      "previousRating": 1813,
+      "movement": -79,
+      "formScore": 13,
+      "qualification": "qualified",
+      "lastMatchDate": "2026-06-02",
+      "recent": [
+        {
+          "date": "2026-06-02",
+          "opponent": "Haiti",
+          "score": "0-4",
+          "result": "L"
+        },
+        {
+          "date": "2026-03-30",
+          "opponent": "Chile",
+          "score": "4-1",
+          "result": "W"
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Finland",
+          "score": "0-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Ecuador",
+          "score": "0-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Colombia",
+          "score": "1-2",
+          "result": "L"
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "Norway",
+          "score": "1-1",
+          "result": "D"
+        },
+        {
+          "date": "2025-10-09",
+          "opponent": "Poland",
+          "score": "0-1",
+          "result": "L"
+        },
+        {
+          "date": "2025-09-09",
+          "opponent": "Australia",
+          "score": "1-3",
+          "result": "L"
+        }
+      ]
+    }
+  }
+}

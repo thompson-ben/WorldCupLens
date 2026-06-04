@@ -1,0 +1,35 @@
+name: Refresh football data
+
+# Re-runs the ingest pipeline to pull the latest results, recompute Elo ratings,
+# form, qualification status and World Cup fixtures, then commits the refreshed
+# snapshots (which triggers a redeploy).
+on:
+  schedule:
+    - cron: "0 6 * * 1" # every Monday 06:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx tsx scripts/ingest-football-data.mts
+      - name: Commit refreshed snapshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain packages/data-providers/src/static/data)" ]]; then
+            git add packages/data-providers/src/static/data
+            git commit -m "chore(data): refresh ratings & fixtures snapshot"
+            git push
+          else
+            echo "No data changes."
+          fi

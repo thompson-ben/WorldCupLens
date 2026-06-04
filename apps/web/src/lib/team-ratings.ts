@@ -51,7 +51,17 @@ export function overallFromRating(rating: number): number {
   return clamp(Math.round(55 + ((rating - 1450) / 700) * 40), 45, 99);
 }
 
-function attributeValue(team: TeamLite, overall: number, key: string): number {
+function attributeValue(
+  team: TeamLite,
+  overall: number,
+  key: string,
+  formById?: Map<string, number>,
+): number {
+  // Use the real recent-form score when available; other components remain a
+  // transparent, derived breakdown of the overall rating (disclosed on-site).
+  if (key === "form" && formById?.has(team.id)) {
+    return clamp(Math.round(formById.get(team.id)!), 1, 99);
+  }
   const offset = (hash(`${team.id}:${key}`) % 1700) / 100 - 8.5; // −8.5 … +8.49
   return clamp(Math.round(overall + offset), 40, 99);
 }
@@ -65,13 +75,16 @@ function percentileOf(value: number, all: number[]): number {
  * Build rating profiles for a whole pool so percentiles are comparable. Pass
  * the same pool you derived ratings from.
  */
-export function buildRatingProfiles(pool: TeamLite[]): Map<string, RatingProfile> {
+export function buildRatingProfiles(
+  pool: TeamLite[],
+  opts: { formById?: Map<string, number> } = {},
+): Map<string, RatingProfile> {
   const overalls = pool.map((t) => overallFromRating(t.rating));
   const valuesByKey = new Map<string, number[]>();
   for (const attr of RATING_ATTRIBUTES) {
     valuesByKey.set(
       attr.key,
-      pool.map((t) => attributeValue(t, overallFromRating(t.rating), attr.key)),
+      pool.map((t) => attributeValue(t, overallFromRating(t.rating), attr.key, opts.formById)),
     );
   }
 
@@ -79,7 +92,7 @@ export function buildRatingProfiles(pool: TeamLite[]): Map<string, RatingProfile
   pool.forEach((team) => {
     const overall = overallFromRating(team.rating);
     const attributes: AttributeScore[] = RATING_ATTRIBUTES.map((attr) => {
-      const value = attributeValue(team, overall, attr.key);
+      const value = attributeValue(team, overall, attr.key, opts.formById);
       return {
         key: attr.key,
         label: attr.label,

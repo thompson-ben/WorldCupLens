@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { DataFreshness } from "@/components/DataFreshness";
 import "./globals.css";
 
 const siteName = "WorldCupLens";
@@ -51,8 +52,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <main className="container">{children}</main>
         <footer className="site-footer">
           <div className="container">
-            Monte Carlo projections from a tournament-agnostic simulation engine.
-            Figures are model-based projections, not betting advice.
+            <DataFreshness />
+            <div style={{ marginTop: "0.4rem" }}>
+              Monte Carlo projections from a tournament-agnostic simulation engine. Figures are
+              model-based projections, not betting advice.
+            </div>
           </div>
         </footer>
       </body>
