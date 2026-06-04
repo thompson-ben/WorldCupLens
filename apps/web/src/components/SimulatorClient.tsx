@@ -1,8 +1,13 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { computeMatchInsights, type TeamLite } from "@/lib/match-insights";
+import { matchExplanation } from "@/lib/explanations";
+import { matchConfidence } from "@/lib/confidence";
+import { track } from "@/lib/analytics";
 import { MatchPredictionCard } from "./cards/MatchPredictionCard";
+import { ExplanationCard } from "./cards/ExplanationCard";
+import { ConfidenceBadge } from "./ui/ConfidenceBadge";
 import { ShareButton } from "./ui/ShareButton";
 
 /**
@@ -37,6 +42,13 @@ export function SimulatorClient({
       ),
     [teamA, teamB, seed],
   );
+
+  const confidence = matchConfidence(insights);
+  const reasons = matchExplanation(insights);
+
+  useEffect(() => {
+    track({ type: "simulate_match", teamA: teamA.id, teamB: teamB.id });
+  }, [teamA.id, teamB.id]);
 
   function swap() {
     setAId(bId);
@@ -110,6 +122,20 @@ export function SimulatorClient({
             </>
           }
         />
+      </div>
+
+      <div className="grid grid-2" style={{ marginTop: "1rem" }}>
+        <ExplanationCard reasons={reasons} />
+        <div className="glass">
+          <div className="ic-top">
+            <span className="ic-kicker">🎯 Prediction confidence</span>
+            <ConfidenceBadge pct={confidence.pct} category={confidence.category} />
+          </div>
+          <div className="stat-tile" style={{ marginTop: "0.4rem" }}>
+            <span className="st-value accent">{confidence.pct}%</span>
+            <span className="st-sub">{confidence.reason}</span>
+          </div>
+        </div>
       </div>
     </>
   );

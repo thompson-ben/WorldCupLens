@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@/lib/analytics";
 
 /**
  * Copies share text to the clipboard (or opens the native share sheet on
@@ -10,10 +11,12 @@ export function ShareButton({
   text,
   label = "Copy share text",
   className = "btn ghost sm",
+  card = "card",
 }: {
   text: string;
   label?: string;
   className?: string;
+  card?: string;
 }) {
   const [done, setDone] = useState(false);
 
@@ -24,6 +27,7 @@ export function ShareButton({
       } else {
         await navigator.clipboard.writeText(text);
       }
+      track({ type: "share", card });
       setDone(true);
       setTimeout(() => setDone(false), 1800);
     } catch {

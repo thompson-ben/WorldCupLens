@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getWorldCupInsights } from "@/lib/wc-insights";
+import { getTeamPool, getWorldCupInsights, WORLD_CUP_SLUG } from "@/lib/wc-insights";
+import { buildRatingProfiles, attr } from "@/lib/team-ratings";
+import { winnerExplanation } from "@/lib/explanations";
+import { tournamentConfidence } from "@/lib/confidence";
 import { flagEmoji, percent } from "@/lib/format";
 import { ProbRow } from "@/components/ui/ProbRow";
+import { ConfidenceBadge } from "@/components/ui/ConfidenceBadge";
 import { InsightCard } from "@/components/InsightCard";
+import { ExplanationCard } from "@/components/cards/ExplanationCard";
 import { TournamentWinnerCard } from "@/components/cards/TournamentWinnerCard";
 import { RouteToFinalCard } from "@/components/cards/RouteToFinalCard";
 
@@ -18,8 +23,35 @@ export const metadata: Metadata = {
 };
 
 export default async function WorldCupDashboard() {
-  const wc = await getWorldCupInsights();
+  const [wc, pool] = await Promise.all([getWorldCupInsights(), getTeamPool(WORLD_CUP_SLUG)]);
   if (!wc) notFound();
+
+  // Explanation + confidence for the favourite (== the route-to-final team).
+  const profiles = buildRatingProfiles(pool);
+  const fav = wc.winners[0]!;
+  const favProfile = profiles.get(fav.team.id);
+  const favGroupQualify =
+    wc.groups.flatMap((g) => g.teams).find((t) => t.team.id === fav.team.id)?.qualify ?? 0;
+  const reachQF = wc.routeToFinal.steps.find((s) => s.stage === "quarter-final")?.prob ?? 0;
+  const reachSemi = wc.routeToFinal.steps.find((s) => s.stage === "semi-final")?.prob ?? 0;
+  const favConfidence = tournamentConfidence(reachSemi);
+
+  // A top side with stronger squad depth, for an honest risk line.
+  const depthRival = wc.winners
+    .slice(1)
+    .map((w) => ({ name: w.team.name, depth: profiles.get(w.team.id) ? attr(profiles.get(w.team.id)!, "squadDepth").value : 0 }))
+    .sort((a, b) => b.depth - a.depth)[0];
+
+  const favExplanation = favProfile
+    ? winnerExplanation({
+        profile: favProfile,
+        groupQualify: favGroupQualify,
+        reachQF,
+        reachSemi,
+        ...(wc.winners[1]?.team.name ? { toughestRival: wc.winners[1].team.name } : {}),
+        ...(depthRival?.name ? { depthRival: depthRival.name } : {}),
+      })
+    : null;
 
   return (
     <>
@@ -33,8 +65,14 @@ export default async function WorldCupDashboard() {
         <Link className="btn" href="/simulator">
           ⚽ Open Match Simulator
         </Link>
-        <Link className="btn ghost" href="/tournaments/world-cup-2026/simulate">
-          Full probability table
+        <Link className="btn ghost" href="/route-comparison">
+          🧭 Route comparison
+        </Link>
+        <Link className="btn ghost" href="/golden-boot">
+          👟 Golden Boot
+        </Link>
+        <Link className="btn ghost" href="/methodology">
+          How it works
         </Link>
       </div>
 
@@ -56,6 +94,36 @@ export default async function WorldCupDashboard() {
           shareText={`${wc.routeToFinal.team.name}'s route to the ${wc.name} final — via WorldCupLens`}
         />
       </div>
+
+      {favExplanation && (
+        <>
+          <h2 className="section-title">
+            Why {fav.team.name} lead{" "}
+            <span style={{ fontSize: "0.8rem", verticalAlign: "middle" }}>
+              <ConfidenceBadge pct={favConfidence.pct} category={favConfidence.category} />
+            </span>
+          </h2>
+          <p className="section-sub">
+            {fav.team.name} win it in {percent(fav.value, 0)} of simulations. {favConfidence.reason}
+          </p>
+          <div className="grid grid-2">
+            <ExplanationCard
+              title={`${fav.team.name} — World Cup winner ${percent(fav.value, 1)}`}
+              reasons={favExplanation.reasons}
+              risks={favExplanation.risks}
+            />
+            <Link className="glass" href={`/teams/${fav.team.id}/ratings`} style={{ textDecoration: "none" }}>
+              <div className="ic-kicker">📊 Rating breakdown</div>
+              <h3 className="ic-title">See {fav.team.name}&apos;s full profile</h3>
+              <p className="ic-summary">
+                Attack, defence, form, squad depth, experience and more — with percentile rankings and
+                a radar chart.
+              </p>
+              <span className="ic-meta">Open team ratings →</span>
+            </Link>
+          </div>
+        </>
+      )}
 
       <div className="grid grid-2">
         <TournamentWinnerCard

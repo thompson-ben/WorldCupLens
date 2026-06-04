@@ -10,6 +10,7 @@ import {
 } from "@worldcuplens/core";
 import { getDataProvider } from "./provider";
 import type { TeamLite } from "./match-insights";
+import { computeGoldenBoot, type GoldenBootEntry } from "./golden-boot";
 
 export const WORLD_CUP_SLUG = "world-cup-2026";
 
@@ -45,6 +46,8 @@ export interface RankedTeam {
   team: TeamLite;
   /** The probability this ranking is about (0–1). */
   value: number;
+  /** Change vs the previous simulation batch (0–1), where computed. */
+  delta?: number;
 }
 
 export interface GroupQualification {
@@ -80,6 +83,7 @@ export interface WorldCupInsights {
   groups: GroupQualification[];
   routeToFinal: { team: TeamLite; steps: StageStep[] };
   movers: { up: Mover[]; down: Mover[] };
+  goldenBoot: GoldenBootEntry[];
 }
 
 interface TournamentSim {
@@ -147,6 +151,9 @@ export async function getWorldCupInsights(): Promise<WorldCupInsights | null> {
     [...teamsById.values()].sort((a, b) => b.rating - a.rating).map((t, i) => [t.id, i + 1]),
   );
   const championRank = new Map(byChampion.map((t, i) => [t.teamId, i + 1]));
+  const prevSemiById = new Map(
+    previous.result.teams.map((t) => [t.teamId, reachAtLeast(t.reachedStage, "semi-final")]),
+  );
 
   const winners: RankedTeam[] = byChampion.slice(0, 8).map((t) => ({ team: lite(t.teamId), value: t.champion }));
 
@@ -170,7 +177,7 @@ export async function getWorldCupInsights(): Promise<WorldCupInsights | null> {
     .filter((t) => (ratingRank.get(t.teamId) ?? 99) > 12)
     .sort((a, b) => b.semi - a.semi)
     .slice(0, 3)
-    .map((t) => ({ team: lite(t.teamId), value: t.semi }));
+    .map((t) => ({ team: lite(t.teamId), value: t.semi, delta: t.semi - (prevSemiById.get(t.teamId) ?? 0) }));
 
   // Most "overrated": among the 10 strongest on paper, the biggest drop from
   // rating rank to championship rank.
@@ -249,6 +256,7 @@ export async function getWorldCupInsights(): Promise<WorldCupInsights | null> {
     groups,
     routeToFinal,
     movers: { up, down },
+    goldenBoot: computeGoldenBoot(result.teams, teamsById),
   };
   return cachedInsights;
 }

@@ -687,6 +687,147 @@ footer.site-footer {
   font-size: 0.82rem;
 }
 
+/* ---------- Confidence badge ---------- */
+.conf {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  white-space: nowrap;
+}
+.conf-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: currentColor;
+}
+.conf-low {
+  color: var(--red);
+  background: rgba(251, 113, 133, 0.1);
+}
+.conf-medium {
+  color: var(--amber);
+  background: rgba(251, 191, 36, 0.1);
+}
+.conf-high {
+  color: var(--blue);
+  background: rgba(56, 189, 248, 0.1);
+}
+.conf-vhigh {
+  color: var(--green);
+  background: rgba(52, 211, 153, 0.1);
+}
+
+/* ---------- Reason / support lists ---------- */
+.reason-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.reason {
+  position: relative;
+  padding-left: 1.4rem;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+.reason::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.reason.ok::before {
+  content: "✓";
+  color: var(--green);
+  font-weight: 800;
+}
+.reason.risk {
+  color: var(--muted);
+}
+.reason.risk::before {
+  content: "⚠";
+  color: var(--amber);
+}
+.support-list {
+  list-style: none;
+  margin: 0.3rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.support-list li {
+  font-size: 0.82rem;
+  color: var(--muted);
+  padding-left: 0.9rem;
+  position: relative;
+}
+.support-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+}
+
+/* ---------- Rating bars ---------- */
+.rating-row {
+  margin-bottom: 0.6rem;
+}
+.rating-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.25rem;
+}
+.rating-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.rating-val {
+  font-size: 0.9rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Route cards ---------- */
+.route-path {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.7rem;
+}
+.route-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.4rem 0.5rem;
+  min-width: 3rem;
+}
+.route-round {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+}
+.route-flag {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+.route-opp {
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
 .toast {
   position: fixed;
   left: 50%;
