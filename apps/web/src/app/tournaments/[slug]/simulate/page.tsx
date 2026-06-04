@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const title = `${tournament.name} — Win probabilities`;
   return {
     title,
-    description: `Monte Carlo championship odds for every team in ${tournament.name}.`,
+    description: `Monte Carlo championship projections for every team in ${tournament.name}.`,
     alternates: { canonical: `/tournaments/${tournament.slug}/simulate` },
   };
 }

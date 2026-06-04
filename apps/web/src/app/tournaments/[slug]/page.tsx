@@ -21,8 +21,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const tournament = await getDataProvider().getTournament(params.slug);
   if (!tournament) return { title: "Tournament not found" };
 
-  const title = `${tournament.name} — Simulation & odds`;
-  const description = `Championship projections and team-by-team odds for ${tournament.name}, powered by Monte Carlo simulation.`;
+  const title = `${tournament.name} — Simulation & projections`;
+  const description = `Championship projections and team-by-team probabilities for ${tournament.name}, powered by Monte Carlo simulation.`;
   return {
     title,
     description,

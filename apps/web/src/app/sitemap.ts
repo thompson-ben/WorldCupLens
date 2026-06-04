@@ -18,7 +18,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     { url: base, changeFrequency: "daily", priority: 1 },
-    { url: `${base}/tournaments`, changeFrequency: "daily", priority: 0.9 },
+    { url: `${base}/world-cup`, changeFrequency: "daily", priority: 0.95 },
+    { url: `${base}/simulator`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${base}/tournaments`, changeFrequency: "daily", priority: 0.85 },
     ...tournamentRoutes,
   ];
 }
