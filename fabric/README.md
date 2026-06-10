@@ -3,8 +3,10 @@
 `Extract_Semantic_Model_Sources.ipynb` loops through a known list of Power BI /
 Fabric semantic models in the Service, reads each model's Power Query (M) code via
 the XMLA / TOM endpoint, and identifies **every data source** referenced (SQL,
-Web/API, files, SharePoint, cloud storage, SaaS connectors, etc.). Airtable and
-Dropbox are still flagged via `keyword_flags` for convenience.
+Web/API, files, SharePoint, cloud storage, SaaS connectors, etc.). **Airtable** and
+**Dropbox** are promoted to their own `source_category` — with base/table IDs or
+file paths extracted, and a parameterised safety net for when the identifier lives
+in a separate parameter — and are also flagged via `keyword_flags`.
 
 ## Use
 
