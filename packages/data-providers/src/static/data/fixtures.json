@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-29T10:29:20.814Z",
+  "generatedAt": "2026-07-06T10:02:32.720Z",
   "source": "github.com/martj42/international_results",
   "competition": "FIFA World Cup 2026",
-  "fixtureCount": 88,
+  "fixtureCount": 98,
   "fixtures": [
     {
       "date": "2026-06-11",
@@ -741,8 +741,8 @@
       "away": "Japan",
       "homeId": "bra",
       "awayId": "jpn",
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "2-1"
     },
     {
       "date": "2026-06-29",
@@ -751,8 +751,8 @@
       "away": "Paraguay",
       "homeId": "ger",
       "awayId": "par",
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "1-1"
     },
     {
       "date": "2026-06-29",
@@ -761,8 +761,8 @@
       "away": "Morocco",
       "homeId": "ned",
       "awayId": "mar",
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "1-1"
     },
     {
       "date": "2026-06-30",
@@ -771,8 +771,8 @@
       "away": "Norway",
       "homeId": "civ",
       "awayId": "nor",
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "1-2"
     },
     {
       "date": "2026-06-30",
@@ -781,8 +781,8 @@
       "away": "Sweden",
       "homeId": "fra",
       "awayId": null,
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "3-0"
     },
     {
       "date": "2026-06-30",
@@ -791,8 +791,8 @@
       "away": "Ecuador",
       "homeId": "mex",
       "awayId": "ecu",
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "2-0"
     },
     {
       "date": "2026-07-01",
@@ -801,8 +801,8 @@
       "away": "DR Congo",
       "homeId": "eng",
       "awayId": null,
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "2-1"
     },
     {
       "date": "2026-07-01",
@@ -811,8 +811,8 @@
       "away": "Senegal",
       "homeId": "bel",
       "awayId": "sen",
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "3-2"
     },
     {
       "date": "2026-07-01",
@@ -821,8 +821,8 @@
       "away": "Bosnia and Herzegovina",
       "homeId": "usa",
       "awayId": null,
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "2-0"
     },
     {
       "date": "2026-07-02",
@@ -831,8 +831,8 @@
       "away": "Austria",
       "homeId": "esp",
       "awayId": "aut",
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "3-0"
     },
     {
       "date": "2026-07-02",
@@ -841,8 +841,8 @@
       "away": "Croatia",
       "homeId": "por",
       "awayId": "cro",
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "2-1"
     },
     {
       "date": "2026-07-02",
@@ -851,8 +851,8 @@
       "away": "Algeria",
       "homeId": "sui",
       "awayId": "alg",
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "2-0"
     },
     {
       "date": "2026-07-03",
@@ -861,8 +861,8 @@
       "away": "Egypt",
       "homeId": "aus",
       "awayId": "egy",
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "1-1"
     },
     {
       "date": "2026-07-03",
@@ -871,8 +871,8 @@
       "away": "Cape Verde",
       "homeId": "arg",
       "awayId": null,
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "3-2"
     },
     {
       "date": "2026-07-03",
@@ -881,6 +881,106 @@
       "away": "Ghana",
       "homeId": "col",
       "awayId": "gha",
+      "status": "completed",
+      "score": "1-0"
+    },
+    {
+      "date": "2026-07-04",
+      "venue": "Houston, United States",
+      "home": "Canada",
+      "away": "Morocco",
+      "homeId": "can",
+      "awayId": "mar",
+      "status": "completed",
+      "score": "0-3"
+    },
+    {
+      "date": "2026-07-04",
+      "venue": "Philadelphia, United States",
+      "home": "Paraguay",
+      "away": "France",
+      "homeId": "par",
+      "awayId": "fra",
+      "status": "completed",
+      "score": "0-1"
+    },
+    {
+      "date": "2026-07-05",
+      "venue": "East Rutherford, United States",
+      "home": "Brazil",
+      "away": "Norway",
+      "homeId": "bra",
+      "awayId": "nor",
+      "status": "completed",
+      "score": "0-2"
+    },
+    {
+      "date": "2026-07-05",
+      "venue": "Mexico City, Mexico",
+      "home": "Mexico",
+      "away": "England",
+      "homeId": "mex",
+      "awayId": "eng",
+      "status": "completed",
+      "score": "2-3"
+    },
+    {
+      "date": "2026-07-06",
+      "venue": "Dallas, United States",
+      "home": "Portugal",
+      "away": "Spain",
+      "homeId": "por",
+      "awayId": "esp",
+      "status": "scheduled",
+      "score": null
+    },
+    {
+      "date": "2026-07-06",
+      "venue": "Seattle, United States",
+      "home": "United States",
+      "away": "Belgium",
+      "homeId": "usa",
+      "awayId": "bel",
+      "status": "scheduled",
+      "score": null
+    },
+    {
+      "date": "2026-07-06",
+      "venue": "Atlanta, United States",
+      "home": "Argentina",
+      "away": "Egypt",
+      "homeId": "arg",
+      "awayId": "egy",
+      "status": "scheduled",
+      "score": null
+    },
+    {
+      "date": "2026-07-06",
+      "venue": "Vancouver, Canada",
+      "home": "Switzerland",
+      "away": "Colombia",
+      "homeId": "sui",
+      "awayId": "col",
+      "status": "scheduled",
+      "score": null
+    },
+    {
+      "date": "2026-07-09",
+      "venue": "Foxborough, United States",
+      "home": "France",
+      "away": "Morocco",
+      "homeId": "fra",
+      "awayId": "mar",
+      "status": "scheduled",
+      "score": null
+    },
+    {
+      "date": "2026-07-11",
+      "venue": "Miami Gardens, United States",
+      "home": "Norway",
+      "away": "England",
+      "homeId": "nor",
+      "awayId": "eng",
       "status": "scheduled",
       "score": null
     }
