@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-06T10:02:32.720Z",
+  "generatedAt": "2026-07-13T08:55:33.284Z",
   "source": "github.com/martj42/international_results",
   "competition": "FIFA World Cup 2026",
-  "fixtureCount": 98,
+  "fixtureCount": 100,
   "fixtures": [
     {
       "date": "2026-06-11",
@@ -912,7 +912,7 @@
       "homeId": "bra",
       "awayId": "nor",
       "status": "completed",
-      "score": "0-2"
+      "score": "1-2"
     },
     {
       "date": "2026-07-05",
@@ -931,8 +931,8 @@
       "away": "Spain",
       "homeId": "por",
       "awayId": "esp",
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "0-1"
     },
     {
       "date": "2026-07-06",
@@ -941,28 +941,28 @@
       "away": "Belgium",
       "homeId": "usa",
       "awayId": "bel",
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "1-4"
     },
     {
-      "date": "2026-07-06",
+      "date": "2026-07-07",
       "venue": "Atlanta, United States",
       "home": "Argentina",
       "away": "Egypt",
       "homeId": "arg",
       "awayId": "egy",
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "3-2"
     },
     {
-      "date": "2026-07-06",
+      "date": "2026-07-07",
       "venue": "Vancouver, Canada",
       "home": "Switzerland",
       "away": "Colombia",
       "homeId": "sui",
       "awayId": "col",
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "0-0"
     },
     {
       "date": "2026-07-09",
@@ -971,8 +971,18 @@
       "away": "Morocco",
       "homeId": "fra",
       "awayId": "mar",
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "2-0"
+    },
+    {
+      "date": "2026-07-10",
+      "venue": "Inglewood, United States",
+      "home": "Spain",
+      "away": "Belgium",
+      "homeId": "esp",
+      "awayId": "bel",
+      "status": "completed",
+      "score": "2-1"
     },
     {
       "date": "2026-07-11",
@@ -981,6 +991,16 @@
       "away": "England",
       "homeId": "nor",
       "awayId": "eng",
+      "status": "scheduled",
+      "score": null
+    },
+    {
+      "date": "2026-07-11",
+      "venue": "Kansas City, United States",
+      "home": "Argentina",
+      "away": "Switzerland",
+      "homeId": "arg",
+      "awayId": "sui",
       "status": "scheduled",
       "score": null
     }
