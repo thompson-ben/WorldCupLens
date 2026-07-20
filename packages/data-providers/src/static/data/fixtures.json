@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-13T08:55:33.284Z",
+  "generatedAt": "2026-07-20T08:45:58.894Z",
   "source": "github.com/martj42/international_results",
   "competition": "FIFA World Cup 2026",
-  "fixtureCount": 100,
+  "fixtureCount": 104,
   "fixtures": [
     {
       "date": "2026-06-11",
@@ -991,8 +991,8 @@
       "away": "England",
       "homeId": "nor",
       "awayId": "eng",
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "1-2"
     },
     {
       "date": "2026-07-11",
@@ -1001,8 +1001,48 @@
       "away": "Switzerland",
       "homeId": "arg",
       "awayId": "sui",
-      "status": "scheduled",
-      "score": null
+      "status": "completed",
+      "score": "3-1"
+    },
+    {
+      "date": "2026-07-14",
+      "venue": "Arlington, United States",
+      "home": "France",
+      "away": "Spain",
+      "homeId": "fra",
+      "awayId": "esp",
+      "status": "completed",
+      "score": "0-2"
+    },
+    {
+      "date": "2026-07-15",
+      "venue": "Atlanta, United States",
+      "home": "England",
+      "away": "Argentina",
+      "homeId": "eng",
+      "awayId": "arg",
+      "status": "completed",
+      "score": "1-2"
+    },
+    {
+      "date": "2026-07-18",
+      "venue": "Miami Gardens, United States",
+      "home": "France",
+      "away": "England",
+      "homeId": "fra",
+      "awayId": "eng",
+      "status": "completed",
+      "score": "4-6"
+    },
+    {
+      "date": "2026-07-19",
+      "venue": "East Rutherford, United States",
+      "home": "Spain",
+      "away": "Argentina",
+      "homeId": "esp",
+      "awayId": "arg",
+      "status": "completed",
+      "score": "1-0"
     }
   ]
 }
